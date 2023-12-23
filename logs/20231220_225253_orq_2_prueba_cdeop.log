@@ -1,0 +1,31 @@
+2023-12-20 22:52:53 - [INFO] - --------------------------------------------------
+2023-12-20 22:52:53 - [INFO] - ORQ 2 PRUEBA CDEOP
+2023-12-20 22:52:53 - [INFO] - --------------------------------------------------
+2023-12-20 22:52:53 - [INFO] - Guardado logs en: C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\logs\20231220_225253_orq_2_prueba_cdeop.log
+2023-12-20 22:53:10 - [INFO] - Versión de Orquestador: 1.2.7
+2023-12-20 22:53:10 - [INFO] - Inicializando Ejecución de Orquestador
+2023-12-20 22:53:10 - [INFO] - Se agregaron 1 consultas al plan de ejecucion
+2023-12-20 22:53:10 - [INFO] - Inicia la ejecucion de la tarea Subir_excel
+2023-12-20 22:53:10 - [INFO] - ------------------------------------------------
+2023-12-20 22:53:10 - [INFO] - Ejecutando Paso ** Subir_excel **
+2023-12-20 22:53:11 - [ERROR] - Error: Falló el paso Subir_excel, Error Encontrado: data type 'bigint' not understood
+2023-12-20 22:53:11 - [ERROR] - ------------ ERROR EN EJECUCION  ---------------------
+2023-12-20 22:53:11 - [ERROR] - El Orquestador ha encontrado un Error en el proceso
+2023-12-20 22:53:11 - [ERROR] - Error en Orq 2 prueba cdeop
+2023-12-20 22:53:11 - [ERROR] - Tipo de Excepcion : TypeError 
+2023-12-20 22:53:11 - [ERROR] - Mensaje : data type 'bigint' not understood
+2023-12-20 22:53:11 - [ERROR] - Stack Trace:
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 595, Func.Name : ejecutar, Message : self.reStarter(sx, maxTries=mT)
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 340, Func.Name : reStarter, Message : raise ex
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 335, Func.Name : reStarter, Message : step.ejecutar()
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\src\vedd_prueba_cdeop\etl.py , Line : 142, Func.Name : ejecutar, Message : df1 = df1.astype(dtype_dict_oblig)
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\core\generic.py , Line : 6513, Func.Name : astype, Message : res_col = col.astype(dtype=cdt, copy=copy, errors=errors)
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\core\generic.py , Line : 6534, Func.Name : astype, Message : new_data = self._mgr.astype(dtype=dtype, copy=copy, errors=errors)
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\core\internals\managers.py , Line : 414, Func.Name : astype, Message : return self.apply(
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\core\internals\managers.py , Line : 354, Func.Name : apply, Message : applied = getattr(b, f)(**kwargs)
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\core\internals\blocks.py , Line : 616, Func.Name : astype, Message : new_values = astype_array_safe(values, dtype, copy=copy, errors=errors)
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\core\dtypes\astype.py , Line : 232, Func.Name : astype_array_safe, Message : dtype = pandas_dtype(dtype)
+2023-12-20 22:53:11 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\core\dtypes\common.py , Line : 1636, Func.Name : pandas_dtype, Message : npdtype = np.dtype(dtype)
+2023-12-20 22:53:11 - [INFO] - Registro de la Ejecución: {'nomb_paquete': 'vedd-prueba-cdeop', 'nomb_proceso': 'Orq 2 prueba cdeop', 'fecha_inicio': 20231220, 'hora_inicio': '22:53:10', 'fecha_fin': 20231220, 'hora_fin': '22:53:11', 'duracion': 0.8, 'estado_fin': 'ERROR', 'texto_fin': "data type 'bigint' not understood"}
+2023-12-20 22:53:11 - [INFO] - Duración Total en 0.79s
+2023-12-20 22:53:11 - [INFO] - ------------------------------------------------

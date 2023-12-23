@@ -1,0 +1,5 @@
+pyodbc==4.0.27
+orquestador2>=1.2.2
+pandas
+openpyxl
+flask

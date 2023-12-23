@@ -1,0 +1,24 @@
+2023-12-20 22:55:04 - [INFO] - --------------------------------------------------
+2023-12-20 22:55:04 - [INFO] - ORQ 2 PRUEBA CDEOP
+2023-12-20 22:55:04 - [INFO] - --------------------------------------------------
+2023-12-20 22:55:04 - [INFO] - Guardado logs en: C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\logs\20231220_225504_orq_2_prueba_cdeop.log
+2023-12-20 22:55:20 - [INFO] - Versión de Orquestador: 1.2.7
+2023-12-20 22:55:20 - [INFO] - Inicializando Ejecución de Orquestador
+2023-12-20 22:55:20 - [INFO] - Se agregaron 1 consultas al plan de ejecucion
+2023-12-20 22:55:20 - [INFO] - Inicia la ejecucion de la tarea Subir_excel
+2023-12-20 22:55:20 - [INFO] - ------------------------------------------------
+2023-12-20 22:55:20 - [INFO] - Ejecutando Paso ** Subir_excel **
+2023-12-20 22:55:21 - [ERROR] - Error: Falló el paso Subir_excel, Error Encontrado: 'Obligaciones_clientes'
+2023-12-20 22:55:21 - [ERROR] - ------------ ERROR EN EJECUCION  ---------------------
+2023-12-20 22:55:21 - [ERROR] - El Orquestador ha encontrado un Error en el proceso
+2023-12-20 22:55:21 - [ERROR] - Error en Orq 2 prueba cdeop
+2023-12-20 22:55:21 - [ERROR] - Tipo de Excepcion : KeyError 
+2023-12-20 22:55:21 - [ERROR] - Mensaje : 'Obligaciones_clientes'
+2023-12-20 22:55:21 - [ERROR] - Stack Trace:
+2023-12-20 22:55:21 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 595, Func.Name : ejecutar, Message : self.reStarter(sx, maxTries=mT)
+2023-12-20 22:55:21 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 340, Func.Name : reStarter, Message : raise ex
+2023-12-20 22:55:21 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 335, Func.Name : reStarter, Message : step.ejecutar()
+2023-12-20 22:55:21 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\src\vedd_prueba_cdeop\etl.py , Line : 142, Func.Name : ejecutar, Message : te_Obligaciones_clientes = "{}.{}".format(parametros["zona_p"],parametros["Obligaciones_clientes"])
+2023-12-20 22:55:21 - [INFO] - Registro de la Ejecución: {'nomb_paquete': 'vedd-prueba-cdeop', 'nomb_proceso': 'Orq 2 prueba cdeop', 'fecha_inicio': 20231220, 'hora_inicio': '22:55:20', 'fecha_fin': 20231220, 'hora_fin': '22:55:21', 'duracion': 1.58, 'estado_fin': 'ERROR', 'texto_fin': "'Obligaciones_clientes'"}
+2023-12-20 22:55:21 - [INFO] - Duración Total en 1.58s
+2023-12-20 22:55:21 - [INFO] - ------------------------------------------------

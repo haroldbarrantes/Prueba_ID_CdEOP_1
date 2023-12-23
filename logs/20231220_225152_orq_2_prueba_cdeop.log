@@ -1,0 +1,28 @@
+2023-12-20 22:51:52 - [INFO] - --------------------------------------------------
+2023-12-20 22:51:52 - [INFO] - ORQ 2 PRUEBA CDEOP
+2023-12-20 22:51:52 - [INFO] - --------------------------------------------------
+2023-12-20 22:51:52 - [INFO] - Guardado logs en: C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\logs\20231220_225152_orq_2_prueba_cdeop.log
+2023-12-20 22:52:05 - [INFO] - Versión de Orquestador: 1.2.7
+2023-12-20 22:52:05 - [INFO] - Inicializando Ejecución de Orquestador
+2023-12-20 22:52:05 - [INFO] - Se agregaron 1 consultas al plan de ejecucion
+2023-12-20 22:52:05 - [INFO] - Inicia la ejecucion de la tarea Subir_excel
+2023-12-20 22:52:05 - [INFO] - ------------------------------------------------
+2023-12-20 22:52:05 - [INFO] - Ejecutando Paso ** Subir_excel **
+2023-12-20 22:52:05 - [ERROR] - Error: Falló el paso Subir_excel, Error Encontrado: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2023-12-20 22:52:05 - [ERROR] - ------------ ERROR EN EJECUCION  ---------------------
+2023-12-20 22:52:05 - [ERROR] - El Orquestador ha encontrado un Error en el proceso
+2023-12-20 22:52:05 - [ERROR] - Error en Orq 2 prueba cdeop
+2023-12-20 22:52:05 - [ERROR] - Tipo de Excepcion : ImportError 
+2023-12-20 22:52:05 - [ERROR] - Mensaje : Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2023-12-20 22:52:05 - [ERROR] - Stack Trace:
+2023-12-20 22:52:05 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 595, Func.Name : ejecutar, Message : self.reStarter(sx, maxTries=mT)
+2023-12-20 22:52:05 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 340, Func.Name : reStarter, Message : raise ex
+2023-12-20 22:52:05 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 335, Func.Name : reStarter, Message : step.ejecutar()
+2023-12-20 22:52:05 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\src\vedd_prueba_cdeop\etl.py , Line : 120, Func.Name : ejecutar, Message : df1=pd.read_excel(Obligaciones_clientes, sheet_name='Obligaciones_clientes')
+2023-12-20 22:52:05 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\io\excel\_base.py , Line : 504, Func.Name : read_excel, Message : io = ExcelFile(
+2023-12-20 22:52:05 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\io\excel\_base.py , Line : 1580, Func.Name : __init__, Message : self._reader = self._engines[engine](
+2023-12-20 22:52:05 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\io\excel\_openpyxl.py , Line : 552, Func.Name : __init__, Message : import_optional_dependency("openpyxl")
+2023-12-20 22:52:05 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\pandas\compat\_optional.py , Line : 135, Func.Name : import_optional_dependency, Message : raise ImportError(msg)
+2023-12-20 22:52:05 - [INFO] - Registro de la Ejecución: {'nomb_paquete': 'vedd-prueba-cdeop', 'nomb_proceso': 'Orq 2 prueba cdeop', 'fecha_inicio': 20231220, 'hora_inicio': '22:52:05', 'fecha_fin': 20231220, 'hora_fin': '22:52:05', 'duracion': 0.05, 'estado_fin': 'ERROR', 'texto_fin': "Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl."}
+2023-12-20 22:52:05 - [INFO] - Duración Total en 0.04s
+2023-12-20 22:52:05 - [INFO] - ------------------------------------------------

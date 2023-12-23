@@ -1,0 +1,24 @@
+2023-12-20 22:56:58 - [INFO] - --------------------------------------------------
+2023-12-20 22:56:58 - [INFO] - ORQ 2 PRUEBA CDEOP
+2023-12-20 22:56:58 - [INFO] - --------------------------------------------------
+2023-12-20 22:56:58 - [INFO] - Guardado logs en: C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\logs\20231220_225658_orq_2_prueba_cdeop.log
+2023-12-20 22:57:15 - [INFO] - Versión de Orquestador: 1.2.7
+2023-12-20 22:57:15 - [INFO] - Inicializando Ejecución de Orquestador
+2023-12-20 22:57:15 - [INFO] - Se agregaron 1 consultas al plan de ejecucion
+2023-12-20 22:57:15 - [INFO] - Inicia la ejecucion de la tarea Subir_excel
+2023-12-20 22:57:15 - [INFO] - ------------------------------------------------
+2023-12-20 22:57:15 - [INFO] - Ejecutando Paso ** Subir_excel **
+2023-12-20 22:57:15 - [ERROR] - Error: Falló el paso Subir_excel, Error Encontrado: 'ruta'
+2023-12-20 22:57:15 - [ERROR] - ------------ ERROR EN EJECUCION  ---------------------
+2023-12-20 22:57:15 - [ERROR] - El Orquestador ha encontrado un Error en el proceso
+2023-12-20 22:57:15 - [ERROR] - Error en Orq 2 prueba cdeop
+2023-12-20 22:57:15 - [ERROR] - Tipo de Excepcion : KeyError 
+2023-12-20 22:57:15 - [ERROR] - Mensaje : 'ruta'
+2023-12-20 22:57:15 - [ERROR] - Stack Trace:
+2023-12-20 22:57:15 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 595, Func.Name : ejecutar, Message : self.reStarter(sx, maxTries=mT)
+2023-12-20 22:57:15 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 340, Func.Name : reStarter, Message : raise ex
+2023-12-20 22:57:15 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\orquestador2\orquestador2.py , Line : 335, Func.Name : reStarter, Message : step.ejecutar()
+2023-12-20 22:57:15 - [ERROR] - ----> File : C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\src\vedd_prueba_cdeop\etl.py , Line : 118, Func.Name : ejecutar, Message : Obligaciones_clientes = "{}".format(parametros["ruta"])
+2023-12-20 22:57:15 - [INFO] - Registro de la Ejecución: {'nomb_paquete': 'vedd-prueba-cdeop', 'nomb_proceso': 'Orq 2 prueba cdeop', 'fecha_inicio': 20231220, 'hora_inicio': '22:57:15', 'fecha_fin': 20231220, 'hora_fin': '22:57:15', 'duracion': 0.04, 'estado_fin': 'ERROR', 'texto_fin': "'ruta'"}
+2023-12-20 22:57:15 - [INFO] - Duración Total en 0.03s
+2023-12-20 22:57:15 - [INFO] - ------------------------------------------------

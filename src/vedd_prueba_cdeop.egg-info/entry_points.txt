@@ -1,0 +1,2 @@
+[console_scripts]
+vedd_prueba_cdeop = vedd_prueba_cdeop.ejecucion:main

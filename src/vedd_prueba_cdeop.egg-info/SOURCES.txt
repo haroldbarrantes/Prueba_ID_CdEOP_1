@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/vedd_prueba_cdeop/__init__.py
+src/vedd_prueba_cdeop/_version.py
+src/vedd_prueba_cdeop/etl.py
+src/vedd_prueba_cdeop.egg-info/PKG-INFO
+src/vedd_prueba_cdeop.egg-info/SOURCES.txt
+src/vedd_prueba_cdeop.egg-info/dependency_links.txt
+src/vedd_prueba_cdeop.egg-info/entry_points.txt
+src/vedd_prueba_cdeop.egg-info/requires.txt
+src/vedd_prueba_cdeop.egg-info/top_level.txt
+src/vedd_prueba_cdeop/static/config.json
+src/vedd_prueba_cdeop/static/sql/ExtractTransformLoad/001_consulta1.sql
+src/vedd_prueba_cdeop/static/sql/ExtractTransformLoad/002_consulta2.sql

@@ -1,0 +1,18 @@
+2023-12-21 08:38:00 - [INFO] - --------------------------------------------------
+2023-12-21 08:38:00 - [INFO] - ORQ 2 PRUEBA CDEOP
+2023-12-21 08:38:00 - [INFO] - --------------------------------------------------
+2023-12-21 08:38:00 - [INFO] - Guardado logs en: C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\logs\20231221_083800_orq_2_prueba_cdeop.log
+2023-12-21 08:38:01 - [ERROR] - Error en la conexión con DSN, error: ('HY000', '[HY000] [Cloudera][DriverSupport] (1170) Unexpected response received from server. Please ensure the server host and port specified for the connection are correct. (1170) (SQLDriverConnect); [HY000] [Cloudera][DriverSupport] (1170) Unexpected response received from server. Please ensure the server host and port specified for the connection are correct. (1170)')
+Traceback (most recent call last):
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\helper\helper.py", line 825, in _obtener_conexion
+    conn = pyodbc.connect(f"DSN={dsn}", autocommit=True)
+pyodbc.Error: ('HY000', '[HY000] [Cloudera][DriverSupport] (1170) Unexpected response received from server. Please ensure the server host and port specified for the connection are correct. (1170) (SQLDriverConnect); [HY000] [Cloudera][DriverSupport] (1170) Unexpected response received from server. Please ensure the server host and port specified for the connection are correct. (1170)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\helper\helper.py", line 103, in __init__
+    self.conn = self._obtener_conexion(dsn, username, password)
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\helper\helper.py", line 829, in _obtener_conexion
+    raise Exception("Error en la conexión con DSN, error: {0}".format(e))
+Exception: Error en la conexión con DSN, error: ('HY000', '[HY000] [Cloudera][DriverSupport] (1170) Unexpected response received from server. Please ensure the server host and port specified for the connection are correct. (1170) (SQLDriverConnect); [HY000] [Cloudera][DriverSupport] (1170) Unexpected response received from server. Please ensure the server host and port specified for the connection are correct. (1170)')

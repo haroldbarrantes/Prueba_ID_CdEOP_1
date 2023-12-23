@@ -1,0 +1,30 @@
+{
+    "global"               : {
+        "dsn" : "IMPALA_PROD" ,
+		"username" : "hbarrant",
+        "parametros_lz"       : {
+            "prefijo"            : "pcdeop_",
+            "zona_procesamiento" : "proceso",
+            "in_oozie"           : "resultados.reporte_flujos_oozie"
+        }    
+    },
+    "ExtractTransformLoad" : {
+        "tareas"                : [
+            {"nombre" : "ejecutar_modulos"            , "kwargs" : []}
+        ]
+    },
+    "Subir_excel": {
+		"zona_p": "proceso",
+		"ruta_obligaciones_clientes" : "C:/Users/hbarrant/Documents/hbarrant - p/Prueba tecnica CdEOps/prueba_ID_CdEOP/vedd-prueba-cdeop/input/Obligaciones_clientes.xlsx",
+		"Obligaciones_clientes" : "prueba_CDEOP_te_Obligaciones_clientes",
+		"ruta_tasas": "C:/Users/hbarrant/Documents/hbarrant - p/Prueba tecnica CdEOps/prueba_ID_CdEOP/vedd-prueba-cdeop/input/tasas_productos.xlsx",
+		"tasas_productos": "prueba_CDEOP_te_tasas_productos"
+	},
+	"GuardarCopiasExcel":{
+		"zona_p": "proceso",
+		"archivo_resultado1_lz" : "C:/Users/hbarrant/Documents/hbarrant - p/Prueba tecnica CdEOps/prueba_ID_CdEOP/vedd-prueba-cdeop/output/Resultado_1.xlsx",
+		"tabla_result1": "CDEOP_prueba_sql1",
+		"tabla_result2": "CDEOP_prueba_sql2",
+		"archivo_resultado2_lz": "C:/Users/hbarrant/Documents/hbarrant - p/Prueba tecnica CdEOps/prueba_ID_CdEOP/vedd-prueba-cdeop/output/Resultado_2.xlsx"
+	}
+}

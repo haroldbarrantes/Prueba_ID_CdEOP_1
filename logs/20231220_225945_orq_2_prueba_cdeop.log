@@ -1,0 +1,27 @@
+2023-12-20 22:59:45 - [INFO] - --------------------------------------------------
+2023-12-20 22:59:45 - [INFO] - ORQ 2 PRUEBA CDEOP
+2023-12-20 22:59:45 - [INFO] - --------------------------------------------------
+2023-12-20 22:59:45 - [INFO] - Guardado logs en: C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\logs\20231220_225945_orq_2_prueba_cdeop.log
+2023-12-20 22:59:58 - [ERROR] - Authentication failed.
+Traceback (most recent call last):
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\sparky_bc\sparky.py", line 153, in __init__
+    self.__ejecutar('mkdir -p "{}"'.format(self.folder_server), program='Bash', error_pattern='.+')
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\sparky_bc\sparky.py", line 1425, in __ejecutar
+    self._ejecucion_remota(command, r)
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\sparky_bc\sparky.py", line 1312, in _ejecucion_remota
+    with self.__remote.connect(hostname=self.hostname, port=self.port) as client:
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\sparky_bc\remote.py", line 10, in connect
+    return self.__mgr.open(hostname, port, self.__msg)
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\sparky_bc\manage_cred.py", line 60, in open
+    client.connect(hostname=hostname, port=port, **json.loads(f.decrypt(encrypted_credentials).decode('utf8')))
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\paramiko\client.py", line 485, in connect
+    self._auth(
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\paramiko\client.py", line 818, in _auth
+    raise saved_exception
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\paramiko\client.py", line 805, in _auth
+    self._transport.auth_password(username, password)
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\paramiko\transport.py", line 1603, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\hbarrant\Documents\hbarrant - p\Prueba tecnica CdEOps\prueba_ID_CdEOP\vedd-prueba-cdeop\.venv\lib\site-packages\paramiko\auth_handler.py", line 263, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
